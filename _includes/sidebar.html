@@ -1,0 +1,11 @@
+<div class="page clearfix" {{include.div_specifier | default: 'post'}}>
+    <a href="#sidebar"><button class="anchor"><i class="fa fa-anchor"></i></button></a>
+    <div class="left">
+        {{include.content}}
+    </div>
+    <div id="sidebar" class="right">
+        <div class="wrap">
+            {{include.sidebar}}
+        </div>
+    </div>
+</div>

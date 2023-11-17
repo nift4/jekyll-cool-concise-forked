@@ -115,13 +115,14 @@
             -moz-hyphens: auto;
             -ms-hyphens: auto;
             hyphens: auto;
-            >div {
+            a >div, >div {
                 padding: 12px 15px;
 
                 // margin-right: -10px;
                 border-bottom: 1px solid #c0c0c0;
                 font-size: 16px;
                 font-weight: bold;
+                color: #333;
             }
             a {
                 color: #4d6dad;
@@ -152,7 +153,7 @@
         width: 95%;
         .left {
             width: 100%;
-            float: left;
+            float: none;
             padding: 10px 14px;
             font-size: 14px;
             >h1 {
@@ -188,10 +189,12 @@
         .anchor {
             display: block;
             visibility: visible;
-            position: fixed;
-            top: 76px;
-            right: 2.5%;
+            position: sticky;
+            top: 10px;
             padding: 5px 10px;
+            width: max-content;
+            margin-left: auto;
+            margin-bottom: 10px;
             color: #333;
             font-size: 15px;
             background-color: #f8f8fd;
@@ -204,34 +207,15 @@
             visibility: hidden;
         }
         .right {
-            visibility: hidden;
-
-            // display: none;
-            position: fixed;
-
-            // z-index: 190;
             float: none;
             width: auto;
-            max-width: 95%;
-            padding: 0;
-            top: 76px;
-            right: 2.5%;
-            opacity: 0;
-            transform-origin: 100% 0;
-            transform: scale(0.1);
-            transition: 0.2s cubic-bezier(0.5, 0.1, 0.51, 1.38);
-        }
-        .right-show {
-            z-index: 999;
-            visibility: visible;
-            opacity: 1;
-            transform: scale(1);
-            .content-ul{
-              margin-bottom: 0;
-              >li:last-of-type{
-                margin-bottom: 16px;
-              }
+            padding: 20px 0 0 0;
+            .side {
+                box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
             }
         }
+    }
+    body {
+        padding-bottom: 100px;
     }
 }
