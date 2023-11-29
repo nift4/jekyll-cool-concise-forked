@@ -28,7 +28,6 @@ layout: default
     </div>
 
 </div>
-{% capture contentForToc %}
 <hr>
 <article itemscope itemtype="http://schema.org/BlogPosting">
 {{content}}
@@ -65,13 +64,12 @@ layout: default
 {% endif %}
 
 {% include comments.html %}
-{% endcapture %} {{contentForToc}}
 {% endcapture %}
 
 {% capture sidebar %}
 <div class="side">
     <a href="#top"><div>Content</div></a>
-    {% include toc.html html=contentForToc id=content-side class=content-ul %}
+    {% include toc.html html=maincontent id=content-side class=content-ul %}
 </div>
 {% endcapture %}
 

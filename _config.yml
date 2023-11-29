@@ -5,6 +5,8 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+safe: True
+
 # Site settings
 title: test
 brief-intro: a
@@ -42,10 +44,11 @@ google_analytics_id:
 
 # Build settings
 markdown: kramdown
-
+lsi: True
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  parse_block_html: true
 
 # port
 # port: 1234
@@ -62,4 +65,6 @@ gems: [jekyll-paginate]
 paginate: 10
 
 plugins:
+  - jekyll-paginate
+whitelist:
   - jekyll-paginate
