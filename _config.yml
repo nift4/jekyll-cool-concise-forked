@@ -28,10 +28,10 @@ index_subtitle: 99% JavaScript free (only required when enabling MathJax), reada
 description_footer: Example Blog
 
 # comments
-# two ways to comment, only choose one, and use your own short name
-# 两种评论插件，选一个就好了，使用自己的 short_name
+# three ways to comment, only choose one, and use your own short name
 duoshuo_shortname:
 disqus_shortname:
+isso_url:
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即

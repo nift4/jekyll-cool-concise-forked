@@ -42,6 +42,13 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the comments.</noscript>
+{% elsif site.isso_url %}
+<script data-isso="{{ site.isso_url }}/"
+        src="{{ site.isso_url }}/js/embed.min.js"></script>
+
+<section id="isso-thread">
+    <noscript>Please enable JavaScript to view the comments.</noscript>
+</section>
 {% else %}
 Configuration error: no comment provider available.
 {% endif %}
